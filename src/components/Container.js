@@ -11,6 +11,13 @@ class Container extends React.Component {
                 <Checkbox label="I'm not a robot"/>
                 <Checkbox label="I'm not a robot"/>
                 <Checkbox label="I'm not a robot"/>
+                <Checkbox label="I'm not a robot"/>
+                <Checkbox label="I'm not a robot"/>
+                <Checkbox label="I'm not a robot"/>
+                <Checkbox label="I'm not a robot"/>
+                <Checkbox label="I'm not a robot"/>
+                <Checkbox label="I'm not a robot"/>
+                <Checkbox label="I'm not a robot"/>
             </div>
         );
     }
