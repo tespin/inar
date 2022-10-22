@@ -5,7 +5,7 @@ import CheckboxList from './CheckboxList';
 const Card = (props) => {
     return (
         <div className="card">
-            <CheckboxList checkboxes={props.checkboxes} onCboxAdded={props.onCboxAdded}/>
+            <CheckboxList checkboxes={props.checkboxes} onCboxChange={props.onCboxChange} setChecked={props.setChecked}/>
         </div>
     );
 }

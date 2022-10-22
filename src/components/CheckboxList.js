@@ -8,9 +8,13 @@ const CheckboxList = (props) => {
             {
                 props.checkboxes.map( (checkbox, index) => {
                     const propsObj = {
-                        key: checkbox.id,
+                        idx: index,
+                        id: checkbox.id,
                         label: checkbox.label,
-                        onChecked: props.onCboxAdded
+                        checked: checkbox.checked,
+                        cboxes: props.checkboxes,
+                        setChecked: props.setChecked,
+                        onCboxChange: props.onCboxChange
                     }
 
                     if (index === 3) {
@@ -32,7 +36,7 @@ const CheckboxList = (props) => {
                     if (index === 10) {
                         return (
                             <div key={checkbox.id} className="marquee-box">
-                                <Checkbox {...propsObj} classname="marquee"/>
+                                <Checkbox {...propsObj} classname="marquee" selected={props.checkboxes.slice(-4, -2)}/>
                             </div>
                         );
                     }
