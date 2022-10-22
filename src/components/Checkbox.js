@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import './Checkbox.css';
+import React, { useState } from 'react';
 
 const Checkbox = (props) => {
     const [wasChecked, setWasChecked] = useState(false);
@@ -14,7 +15,7 @@ const Checkbox = (props) => {
     }
 
     return (
-        <div className={props.classname}>
+        <div className={props.classname ? `cbox ${props.classname}` : 'cbox'}>
             <input 
                 type="checkbox" 
                 id={props.id} 

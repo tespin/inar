@@ -5,7 +5,8 @@
     align-items: center;
     overflow-y: scroll;
     margin: auto;
-    max-height: 25%;
+    max-height: 50vh;
+    flex:0 1 auto;
     /* margin-top: 6rem; */
     /* max-height: 50px; */
     /* flex: 0 0 auto; */
