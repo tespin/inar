@@ -27,7 +27,7 @@ const CheckboxList = (props) => {
 
                     if (index === 6) {
                         return (
-                            <div key={checkbox.id} className="cbox7">
+                            <div key={checkbox.id} className="cbox7 justified">
                                 <Checkbox {...propsObj} label=""/>
                             </div>
                         )
@@ -36,7 +36,39 @@ const CheckboxList = (props) => {
                     if (index === 10) {
                         return (
                             <div key={checkbox.id} className="marquee-box">
-                                <Checkbox {...propsObj} classname="marquee" selected={props.checkboxes.slice(-4, -2)}/>
+                                <Checkbox {...propsObj} classname="marquee" selected={[7, 8, 9]}/>
+                            </div>
+                        );
+                    }
+
+                    if (index === 11) {
+                        return (
+                            <div key={checkbox.id} className="cbox12">
+                                <Checkbox {...propsObj} classname="nocbox"/>
+                            </div>
+                        );
+                    }
+
+                    if (index === 12) {
+                        return (
+                            <div key={checkbox.id} className="cbox13 strikethrough">
+                                <Checkbox {...propsObj}/>
+                            </div>
+                        );
+                    }
+
+                    if (index === 13) {
+                        return (
+                            <div key={checkbox.id} className="cbox14 red">
+                                <Checkbox {...propsObj}/>
+                            </div>
+                        );
+                    }
+
+                    if (index === 15) {
+                        return (
+                            <div key={checkbox.id} className="cbox15 link">
+                                <Checkbox {...propsObj}/>
                             </div>
                         );
                     }

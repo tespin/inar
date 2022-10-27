@@ -17,6 +17,7 @@ const App = () => {
     const handleCboxChange = (event) => {
         const newKey = generateKey();
         setCboxArray((prevCheckboxes) => {
+            const updatedCbox = [...prevCheckboxes];
             return [...prevCheckboxes, { id: newKey, label: "I'm not a robot", checked: false}];
         })
     }
